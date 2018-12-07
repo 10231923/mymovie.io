@@ -1,0 +1,112 @@
+<!DOCTYPE html> 
+<html> 
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<style>
+
+*{
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+header {
+    background-color: #666;
+    padding: 50px;
+    text-align: center;
+    font-size: 2px;
+    color: white;
+}
+nav {
+    float: left;
+    width: 10%;
+    height: 250px; 
+    background: none;
+    padding: 10px;
+}
+nav ul {
+    list-style-type: none;
+    padding: 10px;
+}
+body {
+   color: white;
+   background-image: url("images/Carpet.png");
+   background-color: #cccccc;
+   background-repeat: no-repeat;
+   background-size: 900 x 1200;
+   background-attachment: fixed;
+   background-position: center; 
+}
+   a.button {
+    -webkit-appearance: button;
+    -moz-appearance: button;
+    appearance: button;
+	
+	font-size: 20px;
+    text-decoration: none;
+    color: initial;
+}
+
+.container {
+
+	
+	width: 960px;
+	margin:auto auto auto auto ;
+
+}
+
+</style>
+
+<body> 
+
+
+<section>
+ <nav>
+    <ul>
+      <li><a href="index.html"><button class="w3-button w3-ripple w3-purple w3-round-large w3-hover-yellow">Introduction</button></a></li><p>
+      <li><a href="page 2 the cast.html"<button class="w3-button w3-ripple w3-purple w3-round-large w3-hover-yellow">The Cast</button></a></li><p>
+      <li><a href="page 3 image gallery.html"<button class="w3-button w3-ripple w3-purple w3-round-large w3-hover-yellow">Image Gallery</button></a></li><p>
+	  <li><a href="page 4 trailer.html"<button class="w3-button w3-ripple w3-purple w3-round-large w3-hover-yellow">Movie Trailer</button></a></li><p>
+	   <li><a href="page 5 Quotes.html"<button class="w3-button w3-ripple w3-purple w3-round-large w3-hover-yellow">Quotes</button></a></li><p>
+	</ul>
+  </nav>
+<div class="container">  
+<div style="text-align:center"> 
+  <button onclick="playPause()"class="w3-button w3-ripple w3-purple w3-round-large w3-hover-yellow">Play/Pause</button> 
+  <button onclick="makeBig()"class="w3-button w3-ripple w3-purple w3-round-large w3-hover-yellow">Big</button>
+  <button onclick="makeSmall()"class="w3-button w3-ripple w3-purple w3-round-large w3-hover-yellow">Small</button>
+  <button onclick="makeNormal()"class="w3-button w3-ripple w3-purple w3-round-large w3-hover-yellow">Normal</button>
+  <br><br>
+  <video id="video1" width="760"> 
+    <source src="movie/trailer.webm" type="video/webm">
+    <source src="mov_bbb.ogg" type="video/ogg">
+    Your browser does not support HTML5 video.
+  </video> 
+ <div class="container"> 
+ <img src="images/18 rating.PNG" alt="18 rating" style= width:250px; Height:auto; align:center>
+</div>
+</div>
+<script> 
+var myVideo = document.getElementById("video1"); 
+
+function playPause() { 
+    if (myVideo.paused) 
+        myVideo.play(); 
+    else 
+        myVideo.pause(); 
+} 
+
+function makeBig() { 
+    myVideo.width = 893; 
+} 
+
+function makeSmall() { 
+    myVideo.width = 520; 
+} 
+
+function makeNormal() { 
+    myVideo.width = 750; 
+} 
+</script> 
+ 
+</body> 
+</html>
